@@ -1,0 +1,21 @@
+﻿<Application x:Class="UMLGenerator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Views\MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/WPFLibrary;component/Styles/StylesDictionary.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFLibrary;component/ValueConverters/ConvertersDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBox_Base}">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontFamily" Value="Times New Roman" />
+            </Style>
+            <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource DataGrid_Base}" />
+            <Style TargetType="{x:Type CheckBox}">
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
