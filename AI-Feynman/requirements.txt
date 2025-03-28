@@ -1,8 +1,0 @@
-python >= 3.6
-torch >= 1.4.0
-matplotlib
-sympy = 1.4
-pandas
-scipy
-sortedcontainers
-gfortran
